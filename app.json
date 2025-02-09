@@ -13,9 +13,10 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.benjvandam.StickerSmash"
     },
     "web": {
       "bundler": "metro",
@@ -27,7 +28,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
@@ -37,9 +38,14 @@
     "experiments": {
       "typedRoutes": false
     },
-    "unstable_settings": {
-      "initialRouteName": "index",
-      "enableAbsoluteRouting": true
-    }
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "ffbe6202-ead8-4105-9a88-1cf096303191"
+      }
+    },
+    "owner": "benjvandam"
   }
 }
